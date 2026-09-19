@@ -75,10 +75,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-3793a09f727e4166f67f05d827e59191.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-037af3b3434d3ab225dceef22aa2cb14.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-fc8fe4cb55fc19f94b8951d7c448736e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-633d8d9baae1f9e40c916e38dd58eb31.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -258,7 +258,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Sources and Data</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<h1 class="title">Sources and Data</h1>
 <p class="subtitle lead">All data used in the course · Direct access · Reproducibility</p>
 </div>
 
@@ -277,16 +277,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <style>
-.src-table-wrap { border:1.5px solid #E2E8F0; border-radius:10px; overflow:hidden; margin:1.5rem 0; }
+.src-table-wrap { border:1px solid #1E2128; border-radius:10px; overflow:hidden; margin:1.5rem 0; }
 .src-table-wrap table { margin:0; font-size:.85rem; }
-.src-section { font-family:'DM Sans',sans-serif; font-size:.63rem; text-transform:uppercase; letter-spacing:.12em; color:#2563EB; font-weight:500; margin:2rem 0 .75rem; }
-.src-pkg { display:inline-flex; align-items:center; gap:.4rem; background:#F1F5F9; border:1px solid #E2E8F0; border-radius:6px; padding:.3rem .75rem; font-family:'DM Mono',monospace; font-size:.78rem; color:#334155; margin:.25rem; }
+.src-section { font-family:'DM Sans',sans-serif; font-size:.63rem; text-transform:uppercase; letter-spacing:.12em; color:#C8962A; font-weight:500; margin:2rem 0 .75rem; }
+.src-pkg { display:inline-flex; align-items:center; gap:.4rem; background:#F1F5F9; border:1px solid #1E2128; border-radius:6px; padding:.3rem .75rem; font-family:'DM Mono',monospace; font-size:.78rem; color:#A0988A; margin:.25rem; }
 .src-badge { display:inline-flex; padding:.12rem .5rem; border-radius:4px; font-family:'DM Sans',sans-serif; font-size:.6rem; font-weight:500; text-transform:uppercase; letter-spacing:.05em; }
-.src-badge.libre { background:#ECFDF5; color:#059669; }
-.src-badge.estimee { background:#FFFBEB; color:#D97706; }
-.src-badge.payant { background:#FEF2F2; color:#DC2626; }
+.src-badge.libre { background:rgba(58,138,106,.08); color:#059669; }
+.src-badge.estimee { background:rgba(200,150,42,.06); color:#D97706; }
 </style>
-<p>Tous les graphiques du cours sont reproductibles. Cette page centralise les sources, les liens d’accès direct, et le code R minimal pour récupérer les données.</p>
+<p>All charts in this course are reproducible. This page centralises the sources, direct access links and minimal R code to retrieve the data.</p>
 <section id="main-databases" class="level2">
 <h2 class="anchored" data-anchor-id="main-databases">Main databases</h2>
 <div class="src-section">
@@ -296,40 +295,40 @@ Global inequalities
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>Base</th>
-<th>Couvre</th>
-<th>Accès</th>
-<th>Statut</th>
+<th>Database</th>
+<th>Covers</th>
+<th>Access</th>
+<th>Status</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><strong>WID.world</strong> — World Inequality Database</td>
-<td>Revenus et patrimoines, 100+ pays, depuis 1800</td>
+<td>Incomes and wealth, 100+ countries, since 1800</td>
 <td><a href="https://wid.world">wid.world</a></td>
 <td><span class="src-badge libre">Free</span></td>
 </tr>
 <tr class="even">
-<td><strong>OCDE — Distribution des revenus</strong></td>
-<td>Gini, déciles, pays OCDE, depuis 1980</td>
+<td><strong>OECD — Income Distribution</strong></td>
+<td>Gini, deciles, OECD countries, since 1980</td>
 <td><a href="https://stats.oecd.org">stats.oecd.org</a></td>
 <td><span class="src-badge libre">Free</span></td>
 </tr>
 <tr class="odd">
 <td><strong>Our World in Data — Inequality</strong></td>
-<td>Synthèse pédagogique, graphiques prêts à l’emploi</td>
+<td>Pedagogical synthesis, ready-to-use charts</td>
 <td><a href="https://ourworldindata.org/income-inequality">ourworldindata.org/income-inequality</a></td>
 <td><span class="src-badge libre">Free</span></td>
 </tr>
 <tr class="even">
 <td><strong>Milanovic, Lindert &amp; Williamson (2011)</strong></td>
-<td>Gini historiques pré-industriels (–100 → 1870)</td>
-<td>Via article NBER</td>
+<td>Historical Gini pre-industrial (–100 → 1870)</td>
+<td>Via NBER article</td>
 <td><span class="src-badge estimee">Estimated</span></td>
 </tr>
 <tr class="odd">
 <td><strong>Slave Voyages Database</strong></td>
-<td>Traite atlantique, 1500–1875</td>
+<td>Atlantic trade, 1500–1875</td>
 <td><a href="https://www.slavevoyages.org">slavevoyages.org</a></td>
 <td><span class="src-badge libre">Free</span></td>
 </tr>
@@ -342,55 +341,55 @@ Data by act
 <div class="src-table-wrap">
 <table class="caption-top table">
 <colgroup>
-<col style="width: 19%">
-<col style="width: 35%">
-<col style="width: 25%">
-<col style="width: 19%">
+<col style="width: 17%">
+<col style="width: 32%">
+<col style="width: 28%">
+<col style="width: 21%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Acte</th>
-<th>Donnée clé</th>
+<th>Act</th>
+<th>Key data</th>
 <th>Source</th>
 <th>Note</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>I — Antiquité</td>
-<td>Gini Athènes, Rome, Égypte</td>
+<td>I — Antiquity</td>
+<td>Gini for Athens, Rome, Egypt</td>
 <td>Milanovic &amp; al.&nbsp;(2011)</td>
-<td>Estimations, intervalles larges</td>
+<td>Estimates with wide confidence intervals</td>
 </tr>
 <tr class="even">
-<td>II — Moyen Âge</td>
-<td>Gini Europe avant/après Peste noire</td>
+<td>II — Middle Ages</td>
+<td>European Gini before/after Black Death</td>
 <td>Milanovic &amp; al.&nbsp;(2011)</td>
-<td>Choc démographique documenté</td>
+<td>Demographic shock well documented</td>
 </tr>
 <tr class="odd">
 <td>III — Renaissance</td>
-<td>Gini Europe 1500–1800, traite atlantique</td>
+<td>European Gini 1500–1800, Atlantic trade</td>
 <td>WID.world + Slave Voyages</td>
-<td>Données coloniales souvent absentes des séries standard</td>
+<td>Colonial data often absent from standard series</td>
 </tr>
 <tr class="even">
-<td>IV — XIXe siècle</td>
+<td>IV — 19th century</td>
 <td>Gini UK, France, USA 1800–1910</td>
 <td>WID.world</td>
-<td>Séries longues disponibles</td>
+<td>Long series available</td>
 </tr>
 <tr class="odd">
-<td>V — XXe siècle</td>
-<td>Gini + taux marginal d’imposition 1910–2010</td>
-<td>WID.world + données fiscales OCDE</td>
-<td>Taux marginaux : source IRS (USA), DGFiP (France)</td>
+<td>V — 20th century</td>
+<td>Gini + top marginal tax rate 1910–2010</td>
+<td>WID.world + OECD tax data</td>
+<td>Marginal rates: IRS source (USA)</td>
 </tr>
 <tr class="even">
-<td>VI — XXIe siècle</td>
-<td>Courbe de l’éléphant 1988–2008</td>
-<td>Milanovic (2016), reproduit dans WID</td>
-<td>Percentiles mondiaux de revenus</td>
+<td>VI — 21st century</td>
+<td>Elephant curve 1988–2008</td>
+<td>Milanovic (2016), reproduced in WID</td>
+<td>Global income percentiles</td>
 </tr>
 </tbody>
 </table>
@@ -398,7 +397,7 @@ Data by act
 </section>
 <section id="reproducing-the-charts-in-r" class="level2">
 <h2 class="anchored" data-anchor-id="reproducing-the-charts-in-r">Reproducing the charts in R</h2>
-<p>Required packages :</p>
+<p>Required packages:</p>
 <div style="margin:.75rem 0 1.5rem;">
   <span class="src-pkg">tidyverse</span>
   <span class="src-pkg">plotly</span>
@@ -406,13 +405,13 @@ Data by act
   <span class="src-pkg">tibble</span>
   <span class="src-pkg">ggplot2</span>
 </div>
-<p>Installation en une ligne :</p>
+<p>Install in one line:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"tidyverse"</span>, <span class="st">"plotly"</span>, <span class="st">"scales"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Récupérer les données WID directement depuis R (package <code>wid</code>) :</p>
+<p>Retrieve WID data directly in R (using the <code>wid</code> package):</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("wid")</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(wid)</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Part du revenu national détenue par le top 1%, France, 1900-2022</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Share of national income held by top 1%, France, 1900-2022</span></span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>france_top1 <span class="ot">&lt;-</span> <span class="fu">download_wid</span>(</span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">indicators =</span> <span class="st">"sptinc"</span>,   <span class="co"># share of pre-tax income</span></span>
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">areas      =</span> <span class="st">"FR"</span>,</span>
@@ -420,7 +419,7 @@ Data by act
 <span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">years      =</span> <span class="dv">1900</span><span class="sc">:</span><span class="dv">2022</span></span>
 <span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Même chose pour comparer plusieurs pays</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Compare several countries</span></span>
 <span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>compare <span class="ot">&lt;-</span> <span class="fu">download_wid</span>(</span>
 <span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">indicators =</span> <span class="st">"sptinc"</span>,</span>
 <span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">areas      =</span> <span class="fu">c</span>(<span class="st">"FR"</span>, <span class="st">"US"</span>, <span class="st">"DE"</span>, <span class="st">"SE"</span>),</span>
@@ -430,17 +429,17 @@ Data by act
 </section>
 <section id="historical-data-pre-industrial-gini" class="level2">
 <h2 class="anchored" data-anchor-id="historical-data-pre-industrial-gini">Historical data (pre-industrial Gini)</h2>
-<p>Les données des actes I à III reposent sur des <strong>estimations</strong> avec intervalles d’incertitude larges. Il est pédagogiquement important de le préciser aux étudiants.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Données utilisées dans les graphiques des actes I et II</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Source : Milanovic, Lindert &amp; Williamson (2011), Journal of Economic History</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>gini_antique <span class="ot">&lt;-</span> tibble<span class="sc">::</span><span class="fu">tribble</span>(</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="sc">~</span>societe,              <span class="sc">~</span>gini, <span class="sc">~</span>annee, <span class="sc">~</span>incertitude,</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Athènes classique"</span>,    <span class="fl">0.42</span>,  <span class="sc">-</span><span class="dv">400</span>,   <span class="fl">0.06</span>,</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Rome républicaine"</span>,    <span class="fl">0.43</span>,  <span class="sc">-</span><span class="dv">100</span>,   <span class="fl">0.05</span>,</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Rome impériale"</span>,       <span class="fl">0.49</span>,   <span class="dv">100</span>,   <span class="fl">0.07</span>,</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Europe av. Peste"</span>,     <span class="fl">0.44</span>,  <span class="dv">1300</span>,   <span class="fl">0.04</span>,</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Europe ap. Peste"</span>,     <span class="fl">0.38</span>,  <span class="dv">1370</span>,   <span class="fl">0.04</span>,</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Europe, 1500"</span>,         <span class="fl">0.41</span>,  <span class="dv">1500</span>,   <span class="fl">0.04</span></span>
+<p>Data from Acts I to III rely on <strong>estimates</strong> with wide uncertainty intervals. It is pedagogically important to make this clear to students.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Data used in Acts I and II charts</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Source: Milanovic, Lindert &amp; Williamson (2011), Journal of Economic History</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>gini_ancient <span class="ot">&lt;-</span> tibble<span class="sc">::</span><span class="fu">tribble</span>(</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="sc">~</span>society,              <span class="sc">~</span>gini, <span class="sc">~</span>year, <span class="sc">~</span>uncertainty,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Classical Athens"</span>,    <span class="fl">0.42</span>,  <span class="sc">-</span><span class="dv">400</span>,  <span class="fl">0.06</span>,</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Republican Rome"</span>,     <span class="fl">0.43</span>,  <span class="sc">-</span><span class="dv">100</span>,  <span class="fl">0.05</span>,</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Imperial Rome"</span>,       <span class="fl">0.49</span>,   <span class="dv">100</span>,  <span class="fl">0.07</span>,</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Europe before Plague"</span>,<span class="fl">0.44</span>,  <span class="dv">1300</span>,  <span class="fl">0.04</span>,</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Europe after Plague"</span>, <span class="fl">0.38</span>,  <span class="dv">1370</span>,  <span class="fl">0.04</span>,</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Europe, 1500"</span>,        <span class="fl">0.41</span>,  <span class="dv">1500</span>,  <span class="fl">0.04</span></span>
 <span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -452,20 +451,18 @@ Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Sur les estimations historiques</strong><br>
-Les Gini antiques et médiévaux sont des <em>estimations</em> construites à partir de sources fiscales, testaments, registres fonciers et archives salariales — souvent lacunaires et biaisées vers les élites. Milanovic lui-même indique des intervalles de confiance de ±0,04 à ±0,08. Ces chiffres sont des ordres de grandeur, pas des mesures précises.</p>
+<p><strong>On historical estimates</strong><br>
+Ancient and medieval Gini figures are <em>estimates</em> constructed from fiscal sources, wills, land registers and wage archives — often fragmentary and biased toward elites. Milanovic himself indicates confidence intervals of ±0.04 to ±0.08. These figures are orders of magnitude, not precise measurements.</p>
 </div>
 </div>
 </section>
 <section id="primary-source-bibliography" class="level2">
 <h2 class="anchored" data-anchor-id="primary-source-bibliography">Primary source bibliography</h2>
 <p>Milanovic B., Lindert P.H., Williamson J.G. (2011). <em>Pre-Industrial Inequality</em>. The Economic Journal, 121(551), 255–272.</p>
-<p>Piketty T. (2013). <em>Le Capital au XXIe siècle</em>. Seuil. — Données disponibles sur <a href="http://piketty.pse.ens.fr/fr/capital21c">piketty.pse.ens.fr</a></p>
+<p>Piketty T. (2014). <em>Capital in the Twenty-First Century</em>. Harvard University Press. — Data available at <a href="http://piketty.pse.ens.fr">piketty.pse.ens.fr</a></p>
 <p>Goldin C. (2023). <em>Gender and the Labor Market</em>. Nobel Prize Lecture. — <a href="https://www.nobelprize.org/prizes/economic-sciences/2023/goldin/lecture/">nobelprize.org</a></p>
-<p>Milanovic B. (2016). <em>Global Inequality: A New Approach for the Age of Globalization</em>. Harvard University Press. — Données courbe de l’éléphant disponibles sur <a href="https://branko2f7.wordpress.com">branko2f7.wordpress.com</a></p>
+<p>Milanovic B. (2016). <em>Global Inequality: A New Approach for the Age of Globalization</em>. Harvard University Press. — Elephant curve data at <a href="https://branko2f7.wordpress.com">branko2f7.wordpress.com</a></p>
 
-
-<!-- -->
 
 </section>
 
@@ -797,57 +794,6 @@ window.INEG = (function() {
         container: window.document.getElementById('quarto-embedded-source-code-modal')
       });
       clipboardModal.on('success', onCopySuccess);
-    }
-    const viewSource = window.document.getElementById('quarto-view-source') ||
-                       window.document.getElementById('quarto-code-tools-source');
-    if (viewSource) {
-      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
-      viewSource.addEventListener("click", function(e) {
-        if (sourceUrl) {
-          // rstudio viewer pane
-          if (/\bcapabilities=\b/.test(window.location)) {
-            window.open(sourceUrl);
-          } else {
-            window.location.href = sourceUrl;
-          }
-        } else {
-          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
-          modal.show();
-        }
-        return false;
-      });
-    }
-    function toggleCodeHandler(show) {
-      return function(e) {
-        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-        for (let i=0; i<detailsSrc.length; i++) {
-          const details = detailsSrc[i].parentElement;
-          if (show) {
-            details.open = true;
-          } else {
-            details.removeAttribute("open");
-          }
-        }
-        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
-        const fromCls = show ? "hidden" : "unhidden";
-        const toCls = show ? "unhidden" : "hidden";
-        for (let i=0; i<cellCodeDivs.length; i++) {
-          const codeDiv = cellCodeDivs[i];
-          if (codeDiv.classList.contains(fromCls)) {
-            codeDiv.classList.remove(fromCls);
-            codeDiv.classList.add(toCls);
-          } 
-        }
-        return false;
-      }
-    }
-    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
-    if (hideAllCode) {
-      hideAllCode.addEventListener("click", toggleCodeHandler(false));
-    }
-    const showAllCode = window.document.getElementById("quarto-show-all-code");
-    if (showAllCode) {
-      showAllCode.addEventListener("click", toggleCodeHandler(true));
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
@@ -1182,135 +1128,7 @@ window.INEG = (function() {
       }
     }
   });
-  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Sources and Data"</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "All data used in the course · Direct access · Reproducibility"</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="an">toc:</span><span class="co"> true</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="in">```{=html}</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;style&gt;</span></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="in">.src-table-wrap { border:1.5px solid #E2E8F0; border-radius:10px; overflow:hidden; margin:1.5rem 0; }</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="in">.src-table-wrap table { margin:0; font-size:.85rem; }</span></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="in">.src-section { font-family:'DM Sans',sans-serif; font-size:.63rem; text-transform:uppercase; letter-spacing:.12em; color:#2563EB; font-weight:500; margin:2rem 0 .75rem; }</span></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="in">.src-pkg { display:inline-flex; align-items:center; gap:.4rem; background:#F1F5F9; border:1px solid #E2E8F0; border-radius:6px; padding:.3rem .75rem; font-family:'DM Mono',monospace; font-size:.78rem; color:#334155; margin:.25rem; }</span></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="in">.src-badge { display:inline-flex; padding:.12rem .5rem; border-radius:4px; font-family:'DM Sans',sans-serif; font-size:.6rem; font-weight:500; text-transform:uppercase; letter-spacing:.05em; }</span></span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="in">.src-badge.libre { background:#ECFDF5; color:#059669; }</span></span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="in">.src-badge.estimee { background:#FFFBEB; color:#D97706; }</span></span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="in">.src-badge.payant { background:#FEF2F2; color:#DC2626; }</span></span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/style&gt;</span></span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>Tous les graphiques du cours sont reproductibles. Cette page centralise les sources, les liens d'accès direct, et le code R minimal pour récupérer les données.</span>
-<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a><span class="fu">## Main databases</span></span>
-<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"src-section"</span><span class="dt">&gt;</span>Global inequalities<span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
-<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"src-table-wrap"</span><span class="dt">&gt;</span></span>
-<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Base <span class="pp">|</span> Couvre <span class="pp">|</span> Accès <span class="pp">|</span> Statut <span class="pp">|</span></span>
-<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a><span class="pp">|------|--------|-------|--------|</span></span>
-<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **WID.world** — World Inequality Database <span class="pp">|</span> Revenus et patrimoines, 100+ pays, depuis 1800 <span class="pp">|</span> <span class="co">[</span><span class="ot">wid.world</span><span class="co">](https://wid.world)</span> <span class="pp">|</span> <span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"src-badge libre"</span><span class="dt">&gt;</span>Free<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span> <span class="pp">|</span></span>
-<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **OCDE — Distribution des revenus** <span class="pp">|</span> Gini, déciles, pays OCDE, depuis 1980 <span class="pp">|</span> <span class="co">[</span><span class="ot">stats.oecd.org</span><span class="co">](https://stats.oecd.org)</span> <span class="pp">|</span> <span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"src-badge libre"</span><span class="dt">&gt;</span>Free<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span> <span class="pp">|</span></span>
-<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Our World in Data — Inequality** <span class="pp">|</span> Synthèse pédagogique, graphiques prêts à l'emploi <span class="pp">|</span> <span class="co">[</span><span class="ot">ourworldindata.org/income-inequality</span><span class="co">](https://ourworldindata.org/income-inequality)</span> <span class="pp">|</span> <span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"src-badge libre"</span><span class="dt">&gt;</span>Free<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span> <span class="pp">|</span></span>
-<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Milanovic, Lindert &amp; Williamson (2011)** <span class="pp">|</span> Gini historiques pré-industriels (–100 → 1870) <span class="pp">|</span> Via article NBER <span class="pp">|</span> <span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"src-badge estimee"</span><span class="dt">&gt;</span>Estimated<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span> <span class="pp">|</span></span>
-<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Slave Voyages Database** <span class="pp">|</span> Traite atlantique, 1500–1875 <span class="pp">|</span> <span class="co">[</span><span class="ot">slavevoyages.org</span><span class="co">](https://www.slavevoyages.org)</span> <span class="pp">|</span> <span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"src-badge libre"</span><span class="dt">&gt;</span>Free<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span> <span class="pp">|</span></span>
-<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
-<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"src-section"</span><span class="dt">&gt;</span>Data by act<span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
-<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"src-table-wrap"</span><span class="dt">&gt;</span></span>
-<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Acte <span class="pp">|</span> Donnée clé <span class="pp">|</span> Source <span class="pp">|</span> Note <span class="pp">|</span></span>
-<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a><span class="pp">|------|-----------|--------|------|</span></span>
-<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> I — Antiquité <span class="pp">|</span> Gini Athènes, Rome, Égypte <span class="pp">|</span> Milanovic &amp; al. (2011) <span class="pp">|</span> Estimations, intervalles larges <span class="pp">|</span></span>
-<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> II — Moyen Âge <span class="pp">|</span> Gini Europe avant/après Peste noire <span class="pp">|</span> Milanovic &amp; al. (2011) <span class="pp">|</span> Choc démographique documenté <span class="pp">|</span></span>
-<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> III — Renaissance <span class="pp">|</span> Gini Europe 1500–1800, traite atlantique <span class="pp">|</span> WID.world + Slave Voyages <span class="pp">|</span> Données coloniales souvent absentes des séries standard <span class="pp">|</span></span>
-<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> IV — XIXe siècle <span class="pp">|</span> Gini UK, France, USA 1800–1910 <span class="pp">|</span> WID.world <span class="pp">|</span> Séries longues disponibles <span class="pp">|</span></span>
-<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> V — XXe siècle <span class="pp">|</span> Gini + taux marginal d'imposition 1910–2010 <span class="pp">|</span> WID.world + données fiscales OCDE <span class="pp">|</span> Taux marginaux : source IRS (USA), DGFiP (France) <span class="pp">|</span></span>
-<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> VI — XXIe siècle <span class="pp">|</span> Courbe de l'éléphant 1988–2008 <span class="pp">|</span> Milanovic (2016), reproduit dans WID <span class="pp">|</span> Percentiles mondiaux de revenus <span class="pp">|</span></span>
-<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
-<span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a><span class="fu">## Reproducing the charts in R</span></span>
-<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-55"><a href="#cb4-55" aria-hidden="true" tabindex="-1"></a>Required packages :</span>
-<span id="cb4-56"><a href="#cb4-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-57"><a href="#cb4-57" aria-hidden="true" tabindex="-1"></a><span class="in">```{=html}</span></span>
-<span id="cb4-58"><a href="#cb4-58" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;div style="margin:.75rem 0 1.5rem;"&gt;</span></span>
-<span id="cb4-59"><a href="#cb4-59" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;span class="src-pkg"&gt;tidyverse&lt;/span&gt;</span></span>
-<span id="cb4-60"><a href="#cb4-60" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;span class="src-pkg"&gt;plotly&lt;/span&gt;</span></span>
-<span id="cb4-61"><a href="#cb4-61" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;span class="src-pkg"&gt;scales&lt;/span&gt;</span></span>
-<span id="cb4-62"><a href="#cb4-62" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;span class="src-pkg"&gt;tibble&lt;/span&gt;</span></span>
-<span id="cb4-63"><a href="#cb4-63" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;span class="src-pkg"&gt;ggplot2&lt;/span&gt;</span></span>
-<span id="cb4-64"><a href="#cb4-64" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/div&gt;</span></span>
-<span id="cb4-65"><a href="#cb4-65" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb4-66"><a href="#cb4-66" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-67"><a href="#cb4-67" aria-hidden="true" tabindex="-1"></a>Installation en une ligne :</span>
-<span id="cb4-68"><a href="#cb4-68" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-69"><a href="#cb4-69" aria-hidden="true" tabindex="-1"></a><span class="in">```r</span></span>
-<span id="cb4-70"><a href="#cb4-70" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"tidyverse"</span>, <span class="st">"plotly"</span>, <span class="st">"scales"</span>))</span>
-<span id="cb4-71"><a href="#cb4-71" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb4-72"><a href="#cb4-72" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-73"><a href="#cb4-73" aria-hidden="true" tabindex="-1"></a>Récupérer les données WID directement depuis R (package <span class="in">`wid`</span>) :</span>
-<span id="cb4-74"><a href="#cb4-74" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-75"><a href="#cb4-75" aria-hidden="true" tabindex="-1"></a><span class="in">```r</span></span>
-<span id="cb4-76"><a href="#cb4-76" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("wid")</span></span>
-<span id="cb4-77"><a href="#cb4-77" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(wid)</span>
-<span id="cb4-78"><a href="#cb4-78" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-79"><a href="#cb4-79" aria-hidden="true" tabindex="-1"></a><span class="co"># Part du revenu national détenue par le top 1%, France, 1900-2022</span></span>
-<span id="cb4-80"><a href="#cb4-80" aria-hidden="true" tabindex="-1"></a>france_top1 <span class="ot">&lt;-</span> <span class="fu">download_wid</span>(</span>
-<span id="cb4-81"><a href="#cb4-81" aria-hidden="true" tabindex="-1"></a>  <span class="at">indicators =</span> <span class="st">"sptinc"</span>,   <span class="co"># share of pre-tax income</span></span>
-<span id="cb4-82"><a href="#cb4-82" aria-hidden="true" tabindex="-1"></a>  <span class="at">areas      =</span> <span class="st">"FR"</span>,</span>
-<span id="cb4-83"><a href="#cb4-83" aria-hidden="true" tabindex="-1"></a>  <span class="at">perc       =</span> <span class="st">"p99p100"</span>,  <span class="co"># top 1%</span></span>
-<span id="cb4-84"><a href="#cb4-84" aria-hidden="true" tabindex="-1"></a>  <span class="at">years      =</span> <span class="dv">1900</span><span class="sc">:</span><span class="dv">2022</span></span>
-<span id="cb4-85"><a href="#cb4-85" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb4-86"><a href="#cb4-86" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-87"><a href="#cb4-87" aria-hidden="true" tabindex="-1"></a><span class="co"># Même chose pour comparer plusieurs pays</span></span>
-<span id="cb4-88"><a href="#cb4-88" aria-hidden="true" tabindex="-1"></a>compare <span class="ot">&lt;-</span> <span class="fu">download_wid</span>(</span>
-<span id="cb4-89"><a href="#cb4-89" aria-hidden="true" tabindex="-1"></a>  <span class="at">indicators =</span> <span class="st">"sptinc"</span>,</span>
-<span id="cb4-90"><a href="#cb4-90" aria-hidden="true" tabindex="-1"></a>  <span class="at">areas      =</span> <span class="fu">c</span>(<span class="st">"FR"</span>, <span class="st">"US"</span>, <span class="st">"DE"</span>, <span class="st">"SE"</span>),</span>
-<span id="cb4-91"><a href="#cb4-91" aria-hidden="true" tabindex="-1"></a>  <span class="at">perc       =</span> <span class="st">"p99p100"</span>,</span>
-<span id="cb4-92"><a href="#cb4-92" aria-hidden="true" tabindex="-1"></a>  <span class="at">years      =</span> <span class="dv">1980</span><span class="sc">:</span><span class="dv">2022</span></span>
-<span id="cb4-93"><a href="#cb4-93" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb4-94"><a href="#cb4-94" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb4-95"><a href="#cb4-95" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-96"><a href="#cb4-96" aria-hidden="true" tabindex="-1"></a><span class="fu">## Historical data (pre-industrial Gini)</span></span>
-<span id="cb4-97"><a href="#cb4-97" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-98"><a href="#cb4-98" aria-hidden="true" tabindex="-1"></a>Les données des actes I à III reposent sur des **estimations** avec intervalles d'incertitude larges. Il est pédagogiquement important de le préciser aux étudiants.</span>
-<span id="cb4-99"><a href="#cb4-99" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-100"><a href="#cb4-100" aria-hidden="true" tabindex="-1"></a><span class="in">```r</span></span>
-<span id="cb4-101"><a href="#cb4-101" aria-hidden="true" tabindex="-1"></a><span class="co"># Données utilisées dans les graphiques des actes I et II</span></span>
-<span id="cb4-102"><a href="#cb4-102" aria-hidden="true" tabindex="-1"></a><span class="co"># Source : Milanovic, Lindert &amp; Williamson (2011), Journal of Economic History</span></span>
-<span id="cb4-103"><a href="#cb4-103" aria-hidden="true" tabindex="-1"></a>gini_antique <span class="ot">&lt;-</span> tibble<span class="sc">::</span><span class="fu">tribble</span>(</span>
-<span id="cb4-104"><a href="#cb4-104" aria-hidden="true" tabindex="-1"></a>  <span class="sc">~</span>societe,              <span class="sc">~</span>gini, <span class="sc">~</span>annee, <span class="sc">~</span>incertitude,</span>
-<span id="cb4-105"><a href="#cb4-105" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Athènes classique"</span>,    <span class="fl">0.42</span>,  <span class="sc">-</span><span class="dv">400</span>,   <span class="fl">0.06</span>,</span>
-<span id="cb4-106"><a href="#cb4-106" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Rome républicaine"</span>,    <span class="fl">0.43</span>,  <span class="sc">-</span><span class="dv">100</span>,   <span class="fl">0.05</span>,</span>
-<span id="cb4-107"><a href="#cb4-107" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Rome impériale"</span>,       <span class="fl">0.49</span>,   <span class="dv">100</span>,   <span class="fl">0.07</span>,</span>
-<span id="cb4-108"><a href="#cb4-108" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Europe av. Peste"</span>,     <span class="fl">0.44</span>,  <span class="dv">1300</span>,   <span class="fl">0.04</span>,</span>
-<span id="cb4-109"><a href="#cb4-109" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Europe ap. Peste"</span>,     <span class="fl">0.38</span>,  <span class="dv">1370</span>,   <span class="fl">0.04</span>,</span>
-<span id="cb4-110"><a href="#cb4-110" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Europe, 1500"</span>,         <span class="fl">0.41</span>,  <span class="dv">1500</span>,   <span class="fl">0.04</span></span>
-<span id="cb4-111"><a href="#cb4-111" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb4-112"><a href="#cb4-112" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb4-113"><a href="#cb4-113" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-114"><a href="#cb4-114" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
-<span id="cb4-115"><a href="#cb4-115" aria-hidden="true" tabindex="-1"></a>**Sur les estimations historiques**  </span>
-<span id="cb4-116"><a href="#cb4-116" aria-hidden="true" tabindex="-1"></a>Les Gini antiques et médiévaux sont des *estimations* construites à partir de sources fiscales, testaments, registres fonciers et archives salariales — souvent lacunaires et biaisées vers les élites. Milanovic lui-même indique des intervalles de confiance de ±0,04 à ±0,08. Ces chiffres sont des ordres de grandeur, pas des mesures précises.</span>
-<span id="cb4-117"><a href="#cb4-117" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb4-118"><a href="#cb4-118" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-119"><a href="#cb4-119" aria-hidden="true" tabindex="-1"></a><span class="fu">## Primary source bibliography</span></span>
-<span id="cb4-120"><a href="#cb4-120" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-121"><a href="#cb4-121" aria-hidden="true" tabindex="-1"></a>Milanovic B., Lindert P.H., Williamson J.G. (2011). *Pre-Industrial Inequality*. The Economic Journal, 121(551), 255–272.</span>
-<span id="cb4-122"><a href="#cb4-122" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-123"><a href="#cb4-123" aria-hidden="true" tabindex="-1"></a>Piketty T. (2013). *Le Capital au XXIe siècle*. Seuil. — Données disponibles sur <span class="co">[</span><span class="ot">piketty.pse.ens.fr</span><span class="co">](http://piketty.pse.ens.fr/fr/capital21c)</span></span>
-<span id="cb4-124"><a href="#cb4-124" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-125"><a href="#cb4-125" aria-hidden="true" tabindex="-1"></a>Goldin C. (2023). *Gender and the Labor Market*. Nobel Prize Lecture. — <span class="co">[</span><span class="ot">nobelprize.org</span><span class="co">](https://www.nobelprize.org/prizes/economic-sciences/2023/goldin/lecture/)</span></span>
-<span id="cb4-126"><a href="#cb4-126" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-127"><a href="#cb4-127" aria-hidden="true" tabindex="-1"></a>Milanovic B. (2016). *Global Inequality: A New Approach for the Age of Globalization*. Harvard University Press. — Données courbe de l'éléphant disponibles sur <span class="co">[</span><span class="ot">branko2f7.wordpress.com</span><span class="co">](https://branko2f7.wordpress.com)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
-</div></div></div></div></div>
+  </script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

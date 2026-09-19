@@ -23,41 +23,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -75,10 +40,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-3793a09f727e4166f67f05d827e59191.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-037af3b3434d3ab225dceef22aa2cb14.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-fc8fe4cb55fc19f94b8951d7c448736e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-633d8d9baae1f9e40c916e38dd58eb31.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -247,7 +212,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">About</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<h1 class="title">About</h1>
 <p class="subtitle lead">This site · its sources · the role of AI</p>
 </div>
 
@@ -267,21 +232,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <style>
 .ap-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.25rem; margin:2rem 0; }
-.ap-card { border:1.5px solid #E2E8F0; border-radius:10px; padding:1.35rem 1.25rem; background:white; }
+.ap-card { border:1px solid #1E2128; border-radius:10px; padding:1.35rem 1.25rem; background:#151820; }
 .ap-card-icon { font-size:1.5rem; margin-bottom:.6rem; }
-.ap-card-title { font-family:'DM Sans',sans-serif; font-size:.85rem; font-weight:600; color:#1A1D23; margin-bottom:.4rem; }
-.ap-card-text { font-family:'EB Garamond',Georgia,serif; font-size:.95rem; color:#64748B; line-height:1.7; font-style:italic; }
-.ap-ai-box { background:#1A1D23; border-radius:10px; padding:1.75rem 2rem; margin:2rem 0; color:#CBD5E1; }
+.ap-card-title { font-family:'DM Sans',sans-serif; font-size:.85rem; font-weight:600; color:#E8E0D0; margin-bottom:.4rem; }
+.ap-card-text { font-family:'EB Garamond',Georgia,serif; font-size:.95rem; color:#6A6A60; line-height:1.7; font-style:italic; }
+.ap-ai-box { background:#080A0F; border-radius:10px; padding:1.75rem 2rem; margin:2rem 0; color:#5A5A50; }
 .ap-ai-title { font-family:'DM Sans',sans-serif; font-size:.65rem; text-transform:uppercase; letter-spacing:.13em; color:#60A5FA; margin-bottom:.75rem; }
-.ap-ai-text { font-family:'EB Garamond',Georgia,serif; font-size:1.05rem; line-height:1.8; color:#94A3B8; }
+.ap-ai-text { font-family:'EB Garamond',Georgia,serif; font-size:1.05rem; line-height:1.8; color:#4A4A42; }
 .ap-ai-text strong { color:#E2E8F0; font-style:normal; }
-.ap-ai-text em { color:#CBD5E1; }
+.ap-ai-text em { color:#5A5A50; }
 .ap-tasks { display:grid; grid-template-columns:1fr 1fr; gap:.65rem; margin:1rem 0; }
 .ap-task { background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.08); border-radius:8px; padding:.85rem 1rem; }
 .ap-task-label { font-family:'DM Sans',sans-serif; font-size:.6rem; text-transform:uppercase; letter-spacing:.1em; margin-bottom:.25rem; }
 .ap-task-label.yes { color:#34D399; }
 .ap-task-label.no  { color:#F87171; }
-.ap-task-text { font-family:'EB Garamond',Georgia,serif; font-size:.9rem; color:#94A3B8; line-height:1.55; }
+.ap-task-text { font-family:'EB Garamond',Georgia,serif; font-size:.9rem; color:#4A4A42; line-height:1.55; }
 @media(max-width:600px) { .ap-grid,.ap-tasks { grid-template-columns:1fr; } }
 </style>
 
@@ -318,8 +283,6 @@ The use of AI in academic contexts raises legitimate questions about authenticit
 </div>
 </div>
 
-
-<!-- -->
 
 </section>
 
@@ -651,57 +614,6 @@ window.INEG = (function() {
         container: window.document.getElementById('quarto-embedded-source-code-modal')
       });
       clipboardModal.on('success', onCopySuccess);
-    }
-    const viewSource = window.document.getElementById('quarto-view-source') ||
-                       window.document.getElementById('quarto-code-tools-source');
-    if (viewSource) {
-      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
-      viewSource.addEventListener("click", function(e) {
-        if (sourceUrl) {
-          // rstudio viewer pane
-          if (/\bcapabilities=\b/.test(window.location)) {
-            window.open(sourceUrl);
-          } else {
-            window.location.href = sourceUrl;
-          }
-        } else {
-          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
-          modal.show();
-        }
-        return false;
-      });
-    }
-    function toggleCodeHandler(show) {
-      return function(e) {
-        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-        for (let i=0; i<detailsSrc.length; i++) {
-          const details = detailsSrc[i].parentElement;
-          if (show) {
-            details.open = true;
-          } else {
-            details.removeAttribute("open");
-          }
-        }
-        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
-        const fromCls = show ? "hidden" : "unhidden";
-        const toCls = show ? "unhidden" : "hidden";
-        for (let i=0; i<cellCodeDivs.length; i++) {
-          const codeDiv = cellCodeDivs[i];
-          if (codeDiv.classList.contains(fromCls)) {
-            codeDiv.classList.remove(fromCls);
-            codeDiv.classList.add(toCls);
-          } 
-        }
-        return false;
-      }
-    }
-    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
-    if (hideAllCode) {
-      hideAllCode.addEventListener("click", toggleCodeHandler(false));
-    }
-    const showAllCode = window.document.getElementById("quarto-show-all-code");
-    if (showAllCode) {
-      showAllCode.addEventListener("click", toggleCodeHandler(true));
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
@@ -1036,62 +948,7 @@ window.INEG = (function() {
       }
     }
   });
-  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "About"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "This site · its sources · the role of AI"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">toc:</span><span class="co"> false</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="in">```{=html}</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;style&gt;</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="in">.ap-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.25rem; margin:2rem 0; }</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="in">.ap-card { border:1.5px solid #E2E8F0; border-radius:10px; padding:1.35rem 1.25rem; background:white; }</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="in">.ap-card-icon { font-size:1.5rem; margin-bottom:.6rem; }</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="in">.ap-card-title { font-family:'DM Sans',sans-serif; font-size:.85rem; font-weight:600; color:#1A1D23; margin-bottom:.4rem; }</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="in">.ap-card-text { font-family:'EB Garamond',Georgia,serif; font-size:.95rem; color:#64748B; line-height:1.7; font-style:italic; }</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="in">.ap-ai-box { background:#1A1D23; border-radius:10px; padding:1.75rem 2rem; margin:2rem 0; color:#CBD5E1; }</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="in">.ap-ai-title { font-family:'DM Sans',sans-serif; font-size:.65rem; text-transform:uppercase; letter-spacing:.13em; color:#60A5FA; margin-bottom:.75rem; }</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="in">.ap-ai-text { font-family:'EB Garamond',Georgia,serif; font-size:1.05rem; line-height:1.8; color:#94A3B8; }</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="in">.ap-ai-text strong { color:#E2E8F0; font-style:normal; }</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="in">.ap-ai-text em { color:#CBD5E1; }</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="in">.ap-tasks { display:grid; grid-template-columns:1fr 1fr; gap:.65rem; margin:1rem 0; }</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="in">.ap-task { background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.08); border-radius:8px; padding:.85rem 1rem; }</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="in">.ap-task-label { font-family:'DM Sans',sans-serif; font-size:.6rem; text-transform:uppercase; letter-spacing:.1em; margin-bottom:.25rem; }</span></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="in">.ap-task-label.yes { color:#34D399; }</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="in">.ap-task-label.no  { color:#F87171; }</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="in">.ap-task-text { font-family:'EB Garamond',Georgia,serif; font-size:.9rem; color:#94A3B8; line-height:1.55; }</span></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="in">@media(max-width:600px) { .ap-grid,.ap-tasks { grid-template-columns:1fr; } }</span></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/style&gt;</span></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;div class="ap-grid"&gt;</span></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;div class="ap-card"&gt;&lt;div class="ap-card-icon"&gt;🎓&lt;/div&gt;&lt;div class="ap-card-title"&gt;Educational context&lt;/div&gt;&lt;div class="ap-card-text"&gt;Undergraduate / graduate course in economics and economic history. Designed for a self-directed 8–10 hour journey, with option for in-person use for debates and logbook sharing.&lt;/div&gt;&lt;/div&gt;</span></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;div class="ap-card"&gt;&lt;div class="ap-card-icon"&gt;📊&lt;/div&gt;&lt;div class="ap-card-title"&gt;Data sources&lt;/div&gt;&lt;div class="ap-card-text"&gt;World Inequality Database (wid.world), OECD, Milanovic, Lindert &amp; Williamson (2011) estimates, Our World in Data. All charts are reproducible — R code is visible in each act.&lt;/div&gt;&lt;/div&gt;</span></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;div class="ap-card"&gt;&lt;div class="ap-card-icon"&gt;📚&lt;/div&gt;&lt;div class="ap-card-title"&gt;Academic references&lt;/div&gt;&lt;div class="ap-card-text"&gt;Piketty (2013, 2019), Milanovic (2016), Goldin (2021, 2023), Rawls (1971), Marx (1867), Smith (1776), Rousseau (1755), Ibn Khaldun (1377). Each act lists essential and further readings.&lt;/div&gt;&lt;/div&gt;</span></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;div class="ap-card"&gt;&lt;div class="ap-card-icon"&gt;⚖️&lt;/div&gt;&lt;div class="ap-card-title"&gt;Licence and reuse&lt;/div&gt;&lt;div class="ap-card-text"&gt;Content under CC BY-NC-SA 4.0 — free to reuse and adapt for non-commercial purposes, with attribution and sharing under the same terms.&lt;/div&gt;&lt;/div&gt;</span></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/div&gt;</span></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="fu">## The role of artificial intelligence</span></span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="in">```{=html}</span></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;div class="ap-ai-box"&gt;</span></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;div class="ap-ai-title"&gt;AI Transparency — Claude (Anthropic)&lt;/div&gt;</span></span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;p class="ap-ai-text"&gt;This site was designed and developed with the assistance of &lt;strong&gt;Claude&lt;/strong&gt;, an AI assistant by Anthropic. The AI played the role of a &lt;em&gt;production tool&lt;/em&gt; — not an intellectual authority. Here is what it did, and what it did not do.&lt;/p&gt;</span></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;div class="ap-tasks"&gt;</span></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;div class="ap-task"&gt;&lt;div class="ap-task-label yes"&gt;✓ What the AI produced&lt;/div&gt;&lt;div class="ap-task-text"&gt;Site architecture in Quarto, R chart code, interactive HTML/CSS/JS components (quiz, logbook, XP system), page layout and Thomas's narrative.&lt;/div&gt;&lt;/div&gt;</span></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;div class="ap-task"&gt;&lt;div class="ap-task-label no"&gt;✗ What the AI did not do&lt;/div&gt;&lt;div class="ap-task-text"&gt;Choose the authors studied, define critical angles (gender, colonialism), select data, validate historical claims, or decide on pedagogical positions.&lt;/div&gt;&lt;/div&gt;</span></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;div class="ap-task"&gt;&lt;div class="ap-task-label yes"&gt;✓ Human review&lt;/div&gt;&lt;div class="ap-task-text"&gt;All bibliographic references, quantitative data and historical interpretations were read and validated by the course author.&lt;/div&gt;&lt;/div&gt;</span></span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;div class="ap-task"&gt;&lt;div class="ap-task-label no"&gt;✗ Known limitations&lt;/div&gt;&lt;div class="ap-task-text"&gt;AI can produce factual errors. If you spot an inaccuracy, please flag it — primary sources remain the final arbiter.&lt;/div&gt;&lt;/div&gt;</span></span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;/div&gt;</span></span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/div&gt;</span></span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>**Why this transparency?**  </span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>The use of AI in academic contexts raises legitimate questions about authenticity and intellectual responsibility. This site publicly acknowledges this usage: AI is a formatting and development tool, not a source of knowledge. The scientific content, editorial choices and pedagogical responsibility remain entirely human.</span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
-</div></div></div></div></div>
+  </script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
