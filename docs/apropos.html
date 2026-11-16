@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-3793a09f727e4166f67f05d827e59191.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-707e8b532ce279a82ac7025e7240ea1c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-4ccfd2dce048961c443a218ee1ac8ff5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -232,21 +232,21 @@ ul.task-list li input[type="checkbox"] {
 
 <style>
 .ap-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.25rem; margin:2rem 0; }
-.ap-card { border:1px solid #1E2128; border-radius:10px; padding:1.35rem 1.25rem; background:#151820; }
+.ap-card { border:1px solid #D3DCE8; border-radius:10px; padding:1.35rem 1.25rem; background:#F4F7FB; }
 .ap-card-icon { font-size:1.5rem; margin-bottom:.6rem; }
-.ap-card-title { font-family:'DM Sans',sans-serif; font-size:.85rem; font-weight:600; color:#E8E0D0; margin-bottom:.4rem; }
-.ap-card-text { font-family:'EB Garamond',Georgia,serif; font-size:.95rem; color:#6A6A60; line-height:1.7; font-style:italic; }
-.ap-ai-box { background:#080A0F; border-radius:10px; padding:1.75rem 2rem; margin:2rem 0; color:#5A5A50; }
-.ap-ai-title { font-family:'DM Sans',sans-serif; font-size:.65rem; text-transform:uppercase; letter-spacing:.13em; color:#60A5FA; margin-bottom:.75rem; }
-.ap-ai-text { font-family:'EB Garamond',Georgia,serif; font-size:1.05rem; line-height:1.8; color:#4A4A42; }
+.ap-card-title { font-family:'DM Sans',sans-serif; font-size:.85rem; font-weight:600; color:#14284B; margin-bottom:.4rem; }
+.ap-card-text { font-family:'EB Garamond',Georgia,serif; font-size:.95rem; color:#5A6B82; line-height:1.7; font-style:italic; }
+.ap-ai-box { background:#EAF0F8; border-radius:10px; padding:1.75rem 2rem; margin:2rem 0; color:#5A6B82; }
+.ap-ai-title { font-family:'DM Sans',sans-serif; font-size:.65rem; text-transform:uppercase; letter-spacing:.13em; color:#1F4E8C; margin-bottom:.75rem; }
+.ap-ai-text { font-family:'EB Garamond',Georgia,serif; font-size:1.05rem; line-height:1.8; color:#3A4A60; }
 .ap-ai-text strong { color:#E2E8F0; font-style:normal; }
-.ap-ai-text em { color:#5A5A50; }
+.ap-ai-text em { color:#5A6B82; }
 .ap-tasks { display:grid; grid-template-columns:1fr 1fr; gap:.65rem; margin:1rem 0; }
 .ap-task { background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.08); border-radius:8px; padding:.85rem 1rem; }
 .ap-task-label { font-family:'DM Sans',sans-serif; font-size:.6rem; text-transform:uppercase; letter-spacing:.1em; margin-bottom:.25rem; }
 .ap-task-label.yes { color:#34D399; }
 .ap-task-label.no  { color:#F87171; }
-.ap-task-text { font-family:'EB Garamond',Georgia,serif; font-size:.9rem; color:#4A4A42; line-height:1.55; }
+.ap-task-text { font-family:'EB Garamond',Georgia,serif; font-size:.9rem; color:#3A4A60; line-height:1.55; }
 @media(max-width:600px) { .ap-grid,.ap-tasks { grid-template-columns:1fr; } }
 </style>
 
@@ -311,11 +311,11 @@ The use of AI in academic contexts raises legitimate questions about authenticit
 window.INEG = (function() {
 
   const LEVELS = [
-    { threshold:0,   name:'Apprentice Traveller',    emoji:'🎒', bg:'#1A1D23', msg:'The journey begins. Thomas unfolds his map and looks to the horizon.' },
+    { threshold:0,   name:'Apprentice Traveller',    emoji:'🎒', bg:'#14284B', msg:'The journey begins. Thomas unfolds his map and looks to the horizon.' },
     { threshold:50,  name:'Curious Observer',         emoji:'🔭', bg:'#1E3A5F', msg:'Thomas pulls out his notebook. His eyes learn to see what others ignore.' },
-    { threshold:120, name:'Chronicle of Centuries',   emoji:'📜', bg:'#1F3D2F', msg:'Thomas grasps the grand patterns. His notebook fills with unexpected connections.' },
-    { threshold:220, name:'Inequality Analyst',        emoji:'⚖️', bg:'#3D1F1F', msg:'Thomas debates on equal footing with the great thinkers. His arguments are sharp.' },
-    { threshold:350, name:'Historian of the Journey', emoji:'🏛️', bg:'#2D1B6B', msg:'Thomas sees 25 centuries in a single glance. He understands why inequalities persist — and how to reduce them.' }
+    { threshold:120, name:'Chronicle of Centuries',   emoji:'📜', bg:'#17407A', msg:'Thomas grasps the grand patterns. His notebook fills with unexpected connections.' },
+    { threshold:220, name:'Inequality Analyst',        emoji:'⚖️', bg:'#1B4F8F', msg:'Thomas debates on equal footing with the great thinkers. His arguments are sharp.' },
+    { threshold:350, name:'Historian of the Journey', emoji:'🏛️', bg:'#0F2A52', msg:'Thomas sees 25 centuries in a single glance. He understands why inequalities persist — and how to reduce them.' }
   ];
 
   const XP = {
@@ -350,7 +350,7 @@ window.INEG = (function() {
       m = document.createElement('div');
       m.id = 'levelup-modal';
       m.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:10000;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .3s;';
-      m.innerHTML = `<div id="levelup-box" style="background:#1A1D23;border-radius:16px;padding:2.5rem 2rem;max-width:380px;width:90%;text-align:center;transform:scale(.9);transition:transform .3s;box-shadow:0 20px 60px rgba(0,0,0,.5);">
+      m.innerHTML = `<div id="levelup-box" style="background:#14284B;border-radius:16px;padding:2.5rem 2rem;max-width:380px;width:90%;text-align:center;transform:scale(.9);transition:transform .3s;box-shadow:0 20px 60px rgba(0,0,0,.5);">
         <div id="lu-emoji" style="font-size:3.5rem;margin-bottom:.75rem;animation:luBounce .6s ease .2s both;"></div>
         <div style="font-family:'DM Sans',sans-serif;font-size:.65rem;text-transform:uppercase;letter-spacing:.14em;color:#60A5FA;margin-bottom:.4rem;">Level Unlocked!</div>
         <div id="lu-name" style="font-family:'EB Garamond',Georgia,serif;font-size:1.6rem;color:#F8FAFC;margin-bottom:.75rem;"></div>

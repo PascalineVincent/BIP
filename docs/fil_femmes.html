@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-3793a09f727e4166f67f05d827e59191.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-707e8b532ce279a82ac7025e7240ea1c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-4ccfd2dce048961c443a218ee1ac8ff5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -360,11 +360,11 @@ ul.task-list li input[type="checkbox"] {
 window.INEG = (function() {
 
   const LEVELS = [
-    { threshold:0,   name:'Apprentice Traveller',    emoji:'🎒', bg:'#1A1D23', msg:'The journey begins. Thomas unfolds his map and looks to the horizon.' },
+    { threshold:0,   name:'Apprentice Traveller',    emoji:'🎒', bg:'#14284B', msg:'The journey begins. Thomas unfolds his map and looks to the horizon.' },
     { threshold:50,  name:'Curious Observer',         emoji:'🔭', bg:'#1E3A5F', msg:'Thomas pulls out his notebook. His eyes learn to see what others ignore.' },
-    { threshold:120, name:'Chronicle of Centuries',   emoji:'📜', bg:'#1F3D2F', msg:'Thomas grasps the grand patterns. His notebook fills with unexpected connections.' },
-    { threshold:220, name:'Inequality Analyst',        emoji:'⚖️', bg:'#3D1F1F', msg:'Thomas debates on equal footing with the great thinkers. His arguments are sharp.' },
-    { threshold:350, name:'Historian of the Journey', emoji:'🏛️', bg:'#2D1B6B', msg:'Thomas sees 25 centuries in a single glance. He understands why inequalities persist — and how to reduce them.' }
+    { threshold:120, name:'Chronicle of Centuries',   emoji:'📜', bg:'#17407A', msg:'Thomas grasps the grand patterns. His notebook fills with unexpected connections.' },
+    { threshold:220, name:'Inequality Analyst',        emoji:'⚖️', bg:'#1B4F8F', msg:'Thomas debates on equal footing with the great thinkers. His arguments are sharp.' },
+    { threshold:350, name:'Historian of the Journey', emoji:'🏛️', bg:'#0F2A52', msg:'Thomas sees 25 centuries in a single glance. He understands why inequalities persist — and how to reduce them.' }
   ];
 
   const XP = {
@@ -399,7 +399,7 @@ window.INEG = (function() {
       m = document.createElement('div');
       m.id = 'levelup-modal';
       m.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:10000;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .3s;';
-      m.innerHTML = `<div id="levelup-box" style="background:#1A1D23;border-radius:16px;padding:2.5rem 2rem;max-width:380px;width:90%;text-align:center;transform:scale(.9);transition:transform .3s;box-shadow:0 20px 60px rgba(0,0,0,.5);">
+      m.innerHTML = `<div id="levelup-box" style="background:#14284B;border-radius:16px;padding:2.5rem 2rem;max-width:380px;width:90%;text-align:center;transform:scale(.9);transition:transform .3s;box-shadow:0 20px 60px rgba(0,0,0,.5);">
         <div id="lu-emoji" style="font-size:3.5rem;margin-bottom:.75rem;animation:luBounce .6s ease .2s both;"></div>
         <div style="font-family:'DM Sans',sans-serif;font-size:.65rem;text-transform:uppercase;letter-spacing:.14em;color:#60A5FA;margin-bottom:.4rem;">Level Unlocked!</div>
         <div id="lu-name" style="font-family:'EB Garamond',Georgia,serif;font-size:1.6rem;color:#F8FAFC;margin-bottom:.75rem;"></div>
