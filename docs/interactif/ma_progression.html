@@ -149,6 +149,10 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">🎯 Quiz by act</span></a>
   </li>  
         <li>
+    <a class="dropdown-item" href="../interactif/quiz_cours.html">
+ <span class="dropdown-text">📚 Course Quiz</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="../interactif/debats.html">
  <span class="dropdown-text">⚖️ Debates</span></a>
   </li>  
@@ -174,6 +178,18 @@ ul.task-list li input[type="checkbox"] {
         <li>
     <a class="dropdown-item" href="../seances/index.html">
  <span class="dropdown-text">Sessions</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../seances/handouts.html">
+ <span class="dropdown-text">Course Map &amp; Handouts</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../seances/glossaire.html">
+ <span class="dropdown-text">Glossary</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../seances/formules.html">
+ <span class="dropdown-text">Models &amp; Formulas</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../fil_femmes.html">
@@ -335,7 +351,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   var logbookDone = Object.keys(logbook).filter(function(k){ return logbook[k]&&logbook[k].texte&&logbook[k].texte.length>20; }).length;
   document.getElementById('stat-xp-total').textContent = xpData.total.toLocaleString('en');
-  document.getElementById('stat-quiz-done').textContent = Object.keys(quizzes).length + ' / 7';
+  document.getElementById('stat-quiz-done').textContent = Object.keys(quizzes).filter(function(k){return !/^acte_cours/.test(k);}).length + ' / 7';
   document.getElementById('stat-carnet-done').textContent = logbookDone + ' / 12';
   document.getElementById('stat-dec-done').textContent = Object.keys(decisions).length + ' / 6';
 
